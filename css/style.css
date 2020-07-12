@@ -1,0 +1,432 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); */
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../webfonts/Ubuntu-Regular.woff);
+}
+
+
+/* @font-face {
+    font-family: 'Ubuntu';
+    src: url(../webfonts/Ubuntu-Bold.woff);
+} */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1264px;
+}
+
+figure {
+    margin-bottom: 0px;
+}
+
+.krd_link a {
+    color: #fff;
+}
+
+.krd_link a:hover {
+    color: #b1d150;
+    text-decoration: none;
+}
+
+
+/* Title */
+
+.krd-title {
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.krd-title span {
+    border-bottom: 1px solid #b1d150;
+    border-top: 1px solid #b1d150;
+    display: inline-block;
+    padding: 15px 12px;
+}
+
+
+/*header*/
+
+header {
+    height: 100%;
+}
+
+.krd_logo {
+    width: 82%;
+}
+
+.krd_header_buttom {
+    padding: 14px 15px;
+}
+
+.krd_header_top {
+    background-color: #4c4d4f;
+}
+
+.media {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-nav a {
+    color: #777c81;
+}
+
+.navbar-nav a:hover {
+    color: #b1d150;
+}
+
+.krd_header_icon {
+    background-color: #b1d150;
+    height: 100%;
+    width: 53px;
+    text-align: center;
+}
+
+.media i {
+    padding: 15px;
+    color: white;
+}
+
+
+/*Main Image panel*/
+
+.krd_main_img {
+    padding-top: 192px;
+    padding-bottom: 192px;
+    background-image: url('../image/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.krd_contactUs_panel {
+    background-color: #b1d150;
+    width: 370px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.krd_contactUs_panel a {
+    padding: 15px 60px;
+    background-color: #4c4d4f;
+    font-size: 24px;
+    border-radius: 0px;
+    color: white;
+}
+
+.krd_contactUs_panel h1 {
+    font-size: 110px;
+    line-height: 100px
+}
+
+.krd_contactUs_panel h3 {
+    line-height: 67px;
+    font-size: 75px;
+    line-height: 83px;
+}
+
+.krd_contactUs_panel h5 {
+    line-height: 47px;
+    font-size: 48px;
+}
+
+
+/*Render Building information panel*/
+
+.krd_rendell_building {
+    background-image: url('../image/pic2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 15px 95px 15px;
+}
+
+.krd_building_intro p {
+    font-size: 18px;
+}
+
+
+/*Service Panel*/
+
+.krd_service_panel {
+    background-image: url('../image/Services.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 75px 15px 80px 15px;
+}
+
+.krd_service_panel::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(76, 77, 79, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.krd_serviceimages img {
+    width: 100%;
+}
+
+.krd_service_panel {
+    z-index: 0;
+    position: relative;
+}
+
+.krd_service_panel>* {
+    position: relative;
+    z-index: 10;
+}
+
+.krd_service_card_body {
+    background-color: #4c4d4f;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.btn {
+    background-color: #b1d150;
+    color: white;
+    border-radius: 0px;
+}
+
+.card {
+    margin-bottom: 40px;
+}
+
+.krd_service_card_body p {
+    color: #bdbdbd;
+}
+
+
+/*Project Managment Panel*/
+
+.krd_project_managment {
+    background-color: #b1d150;
+    background-image: url("../image/image15.png");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+
+.krd_project_managment img {
+    margin-bottom: 20px;
+}
+
+
+/*Clients  Panel*/
+
+.krd_our_clients {
+    background-color: #fafafa;
+    padding: 80px 15px 80px 15px;
+}
+
+.krd_clients_logo {
+    border: 1px solid #ebebeb;
+    height: 100%;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+}
+
+.krd_clients_logo img {
+    max-width: 100%;
+    padding: 14px 0;
+}
+
+.krd_clients_logo a {
+    height: 123px;
+}
+
+.krd_clients_logo figcaption {
+    margin-top: auto;
+    border-top: 1px solid #ebebeb;
+}
+
+.krd-KC img {
+    height: 100%;
+}
+
+
+/*Testimonial Panel*/
+
+.krd_testimonial {
+    padding: 65px 15px 65px 15px;
+}
+
+.krd_testimonial p {
+    font-size: 16px;
+    text-align: justify;
+    color: white;
+}
+
+.krd_testimonial i {
+    color: white;
+}
+
+.krd_testimonial h4 {
+    color: white;
+    text-align: center;
+}
+
+.krd_testimonial_detail {
+    background-color: #b1d150;
+}
+
+.krd-topbar::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid#fff;
+    width: 30px;
+    left: 184px;
+    top: 364px;
+}
+
+.krd-subheading {
+    padding-top: 94px;
+}
+
+button.owl-next:focus {
+    outline: none;
+}
+
+button.owl-prev:focus {
+    outline: none;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -80px;
+    top: 200px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%!important;
+    background-color: #b1d150!important;
+}
+
+.owl-prev:hover {
+    background-color: #869791!important;
+    font-size: 25px!important;
+}
+
+.owl-next {
+    position: absolute;
+    right: -80px;
+    top: 200px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%!important;
+    background-color: #b1d150!important;
+}
+
+.owl-next:hover {
+    background-color: #869791!important;
+    font-size: 25px!important;
+}
+
+
+/*Accreditation Panel*/
+
+.krd_accreditation_cover {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 80px 15px 80px 15px;
+    background-image: url("../image/Accreditation_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.krd_accreditation_Greenbox {
+    font-size: 20px;
+    color: white;
+    background-color: #b1d150;
+    height: 148px;
+    padding: 0px 25px;
+}
+
+.krd_accreditation_whitebox {
+    font-size: 20px;
+    color: #b1d150;
+    border: 1px solid #ebebeb;
+    height: 148px;
+    padding: 0px 15px;
+}
+
+
+/*Covered Area*/
+
+.krd_covered_area {
+    padding: 76px 15px 76px 15px;
+}
+
+.krd-Areas {
+    color: #fff;
+    background-color: #b1d150;
+}
+
+.krd_covered_area .col {
+    border: 1px solid #b1d150;
+}
+
+
+/*footer*/
+
+.krd_footer_toprow h6 {
+    color: #b1d150;
+    margin-bottom: 15px
+}
+
+.krd_footer_toprow address {
+    color: #fff;
+}
+
+.krd_footer_toprow {
+    border-bottom: 1px solid #5e5f61;
+    padding-bottom: 37px;
+}
+
+footer {
+    width: 100%;
+    background-image: url('../image/footer_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #4c4d4f;
+    padding: 85px 15px 52px 15px;
+}
+
+.krd_footer_bottomrow {
+    text-align: center;
+}
+
+.krd_footer_bottomrow p {
+    color: #fff;
+}
+
+.krd_footer_bottomrow p a {
+    color: #b1d150;
+}
+
+.krd_footer_bottomrow a:hover {
+    color: #b1d150;
+}
