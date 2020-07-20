@@ -78,7 +78,7 @@ header {
 }
 
 .navbar-nav a:hover {
-    color: #b1d150;
+    color: #b1d150!important;
 }
 
 .krd_header_icon {
@@ -129,7 +129,6 @@ header {
 }
 
 .krd_contactUs_panel h3 {
-    line-height: 67px;
     font-size: 75px;
     line-height: 83px;
 }
@@ -176,6 +175,12 @@ header {
     left: 0;
 }
 
+.krd_btn {
+    color: white;
+    background-color: #b1d150;
+    border-radius: 0;
+}
+
 .krd_serviceimages img {
     width: 100%;
 }
@@ -196,12 +201,6 @@ header {
     text-align: center;
     width: 100%;
     padding: 30px;
-}
-
-.btn {
-    background-color: #b1d150;
-    color: white;
-    border-radius: 0px;
 }
 
 .card {
@@ -229,6 +228,7 @@ header {
 
 .krd_project_managment img {
     margin-bottom: 20px;
+    max-width: 100%;
 }
 
 
@@ -283,6 +283,10 @@ header {
     color: white;
 }
 
+.krd-testimonial-icon {
+    font-size: 30px;
+}
+
 .krd_testimonial h4 {
     color: white;
     text-align: center;
@@ -298,11 +302,11 @@ header {
     border-top: 2px solid#fff;
     width: 30px;
     left: 184px;
-    top: 364px;
+    top: 316px;
 }
 
 .krd-subheading {
-    padding-top: 94px;
+    padding-top: 72px;
 }
 
 button.owl-next:focus {
@@ -315,8 +319,8 @@ button.owl-prev:focus {
 
 .owl-prev {
     position: absolute;
-    left: -80px;
-    top: 200px;
+    left: -100px;
+    top: 150px;
     height: 55px;
     width: 55px;
     border-radius: 50%!important;
@@ -330,8 +334,8 @@ button.owl-prev:focus {
 
 .owl-next {
     position: absolute;
-    right: -80px;
-    top: 200px;
+    right: -100px;
+    top: 150px;
     height: 55px;
     width: 55px;
     border-radius: 50%!important;
@@ -347,7 +351,6 @@ button.owl-prev:focus {
 /*Accreditation Panel*/
 
 .krd_accreditation_cover {
-    width: 100%;
     background-color: #fafafa;
     padding: 80px 15px 80px 15px;
     background-image: url("../image/Accreditation_background.png");
@@ -406,7 +409,6 @@ button.owl-prev:focus {
 }
 
 footer {
-    width: 100%;
     background-image: url('../image/footer_image.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,4 +431,195 @@ footer {
 
 .krd_footer_bottomrow a:hover {
     color: #b1d150;
+}
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 768px) {
+    /*header*/
+    .navbar-collapse {
+        background-color: white;
+        top: 100%;
+        position: absolute;
+        padding: 0 20px;
+        left: 0;
+        width: 100%;
+    }
+    .krd_link {
+        display: none;
+    }
+    .krd_logo {
+        width: 70%;
+    }
+    /*main Image*/
+    .krd_main_img {
+        padding: 130px 0;
+    }
+    .krd_contactUs_panel {
+        width: 200px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .krd_contactUs_panel h1 {
+        font-size: 65px;
+        line-height: 65px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel h3 {
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel h5 {
+        line-height: 27px;
+        font-size: 27px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel a {
+        padding: 5px 28px;
+        font-size: 10px;
+        border-radius: 0px;
+    }
+    .krd_project_managment p {
+        font-size: 20px;
+    }
+    .krd_project_managment {
+        padding: 60px 30px;
+    }
+    /*Building krundell intoduction */
+    .krd_building_intro p {
+        font-size: 15px;
+    }
+    .krd-title {
+        font-size: 22px;
+    }
+    .krd_testimonial p {
+        font-size: 14px;
+    }
+    .krd_testimonial h4 {
+        font-size: 18px;
+    }
+    .krd-topbar::after {
+        left: 146px;
+        top: 326px;
+    }
+    .krd_accreditation_Greenbox {
+        font-size: 14px;
+    }
+    .krd_accreditation_whitebox {
+        font-size: 14px;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .krd_main_img {
+        padding: 100px 0;
+    }
+    .krd_header_buttom {
+        padding: 5px;
+    }
+    .krd_logo {
+        width: 90%;
+    }
+    /*main Image*/
+    .krd_contactUs_panel {
+        width: 150px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .krd_contactUs_panel h1 {
+        font-size: 50px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel h3 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel h5 {
+        line-height: 22px;
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .krd_contactUs_panel a {
+        padding: 5px 28px;
+        font-size: 10px;
+        border-radius: 0px;
+    }
+    /*Building krundell intoduction */
+    .krd_building_intro p {
+        font-size: 12px;
+    }
+    .krd-title {
+        font-size: 19px;
+    }
+    .krd-title {
+        margin-bottom: 40px;
+    }
+    .krd_rendell_building {
+        padding: 55px 15px 70px 15px;
+    }
+    .krd_project_managment p {
+        font-size: 12px;
+    }
+    .krd_project_managment {
+        padding: 60px 1px;
+    }
+    /*Services*/
+    .card-title {
+        font-size: 15px;
+    }
+    .krd_service_panel {
+        padding: 40px 10px 10px 10px;
+    }
+    .krd_service_card_body p {
+        font-size: 12px;
+    }
+    .krd_btn {
+        font-size: 12px;
+    }
+    /*Testimonial*/
+    .krd-testimonial-icon {
+        font-size: 16px;
+    }
+    .krd_testimonial {
+        padding: 40px 0px 30px 0px;
+    }
+    .krd_testimonial p {
+        font-size: 13px;
+    }
+    .krd_testimonial i {
+        margin-left: -5px;
+    }
+    .krd_testimonial h4 {
+        font-size: 18px;
+    }
+    .krd-topbar::after {
+        left: 112px;
+        top: 286px;
+        width: 25px;
+    }
+    /*our clients*/
+    .krd_our_clients {
+        padding: 55px 0 55px 0;
+    }
+    /*Accreditation*/
+    .krd_accreditation_cover {
+        padding: 40px 5px 40px 5px;
+    }
+    .krd_accreditation_Greenbox {
+        font-size: 12px;
+    }
+    .krd_accreditation_whitebox {
+        font-size: 12px;
+    }
 }
