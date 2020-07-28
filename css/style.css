@@ -123,6 +123,10 @@ header {
     color: white;
 }
 
+.krd_contactUs_panel a:hover {
+    color: #b1d150;
+}
+
 .krd_contactUs_panel h1 {
     font-size: 110px;
     line-height: 100px
@@ -287,26 +291,54 @@ header {
     font-size: 30px;
 }
 
-.krd_testimonial h4 {
-    color: white;
-    text-align: center;
-}
-
 .krd_testimonial_detail {
     background-color: #b1d150;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px 40px 15px 40px;
 }
 
-.krd-topbar::after {
+.krd_testimonial_detail::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 14px;
+}
+
+.krd_testimonial_detail::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.krd-subheading::after {
     content: "";
     position: absolute;
     border-top: 2px solid#fff;
     width: 30px;
-    left: 184px;
-    top: 316px;
+    left: calc(50% - 15px);
+    top: -7px;
 }
 
 .krd-subheading {
-    padding-top: 72px;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
 button.owl-next:focus {
@@ -345,6 +377,10 @@ button.owl-prev:focus {
 .owl-next:hover {
     background-color: #869791!important;
     font-size: 25px!important;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
 }
 
 
@@ -438,6 +474,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
     /*header*/
+    .krd_header_top {
+        padding: 6px;
+    }
     .navbar-collapse {
         background-color: white;
         top: 100%;
@@ -446,7 +485,7 @@ footer {
         left: 0;
         width: 100%;
     }
-    .krd_link {
+    .krd-display {
         display: none;
     }
     .krd_logo {
@@ -457,30 +496,31 @@ footer {
         padding: 130px 0;
     }
     .krd_contactUs_panel {
-        width: 200px;
+        width: 280px;
         padding-top: 10px;
         padding-right: 20px;
         padding-bottom: 20px;
         padding-left: 20px;
+        margin-left: 40px;
     }
     .krd_contactUs_panel h1 {
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 90px;
+        line-height: 85px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel h3 {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 63px;
+        line-height: 55px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel h5 {
-        line-height: 27px;
-        font-size: 27px;
+        line-height: 45px;
+        font-size: 40px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel a {
         padding: 5px 28px;
-        font-size: 10px;
+        font-size: 24px;
         border-radius: 0px;
     }
     .krd_project_managment p {
@@ -502,10 +542,6 @@ footer {
     .krd_testimonial h4 {
         font-size: 18px;
     }
-    .krd-topbar::after {
-        left: 146px;
-        top: 326px;
-    }
     .krd_accreditation_Greenbox {
         font-size: 14px;
     }
@@ -515,9 +551,22 @@ footer {
     .owl-carousel .owl-nav button.owl-next {
         display: none;
     }
+    footer {
+        padding: 50px 15px;
+    }
+    .krd_footer_toprow img {
+        margin-bottom: 40px;
+        width: 40%;
+    }
+    .krd-info {
+        padding-left: 40px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .krd_header_icon {
+        margin-left: 10px;
+    }
     .krd_main_img {
         padding: 100px 0;
     }
@@ -529,36 +578,34 @@ footer {
     }
     /*main Image*/
     .krd_contactUs_panel {
-        width: 150px;
-        padding-top: 5px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
+        width: 190px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        margin-left: 0px;
     }
     .krd_contactUs_panel h1 {
-        font-size: 50px;
-        line-height: 48px;
+        font-size: 65px;
+        line-height: 65px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel h3 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 45px;
+        line-height: 45px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel h5 {
-        line-height: 22px;
-        font-size: 22px;
+        line-height: 27px;
+        font-size: 28px;
         margin-bottom: 0px;
     }
     .krd_contactUs_panel a {
         padding: 5px 28px;
-        font-size: 10px;
+        font-size: 15px;
         border-radius: 0px;
     }
     /*Building krundell intoduction */
-    .krd_building_intro p {
-        font-size: 12px;
-    }
     .krd-title {
         font-size: 19px;
     }
@@ -603,14 +650,12 @@ footer {
     .krd_testimonial h4 {
         font-size: 18px;
     }
-    .krd-topbar::after {
-        left: 112px;
-        top: 286px;
-        width: 25px;
-    }
     /*our clients*/
     .krd_our_clients {
         padding: 55px 0 55px 0;
+    }
+    .krd-logo-box {
+        padding: 0 15px;
     }
     /*Accreditation*/
     .krd_accreditation_cover {
@@ -621,5 +666,12 @@ footer {
     }
     .krd_accreditation_whitebox {
         font-size: 12px;
+    }
+    .krd-strip {
+        flex: 100%;
+    }
+    .krd_footer_toprow img {
+        margin-bottom: 40px;
+        width: 75%;
     }
 }
